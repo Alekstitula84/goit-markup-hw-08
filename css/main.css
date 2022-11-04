@@ -184,7 +184,7 @@ textarea {
 }
 
 .logo {
-  display: inline-block;
+  display: block;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -598,13 +598,28 @@ textarea {
   background: var(--hero-bacground-color);
 }
 
-.footer__container {
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.kontakty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo__part--light {
@@ -619,10 +634,17 @@ textarea {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .company-data__item {
+    display: block;
+    text-align: center;
+  }
+}
+
 .company-data__adres {
   -webkit-transition: color var(--transition-duration);
   transition: color var(--transition-duration);
-  display: inline-block;
+  display: block;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -638,7 +660,7 @@ textarea {
 .company-data__nav {
   -webkit-transition: color var(--transition-duration);
   transition: color var(--transition-duration);
-  display: inline-block;
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -650,8 +672,10 @@ textarea {
   color: var(--text-nav-link-hover-color);
 }
 
-.soc {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .soc {
+    margin-left: 70px;
+  }
 }
 
 .soc__title {
@@ -951,8 +975,12 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
   gap: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    margin-left: 93px;
+  }
 }
 
 .subscription {

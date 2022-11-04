@@ -1,6 +1,8 @@
 .subscription-form {
     display: flex;
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
     gap: 12px;
 }
 
