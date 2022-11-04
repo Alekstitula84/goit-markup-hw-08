@@ -1,15 +1,28 @@
 .subscription-form {
+    width: 100%;
     display: flex;
+    @media screen and (max-width: 1199px) {
+flex-direction: column;
+    align-items: center;
+    }
+    
+    
     @media screen and (min-width: 1200px) {
             margin-left: 93px;
+            
+gap: 12px;
         }
-    gap: 12px;
+    
 }
 
 .subscription {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @media screen and (max-width: 1199px) {
+margin-bottom: 20px;
+    }
+    
 }
 
 .subscription__text {
@@ -19,15 +32,20 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-title-color);
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+    }
 }
 
 .subscription__label {
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
 
 .subscription__input {
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -49,13 +67,17 @@
 
 
 .signature {
+
     position: relative;
     top: 0;
     left: 0;
 }
 
 .signature__btn {
-    position: absolute;
+    @media screen and (min-width: 1200px) {
+position: absolute;
+    }
+    
     bottom: 0;
     display: flex;
     gap: 10px;
