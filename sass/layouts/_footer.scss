@@ -22,9 +22,7 @@
         }
 }
 
-.adress {
-    width: 100%;
-}
+
 
 .logo__part--light {
     display: inline-block;
@@ -39,8 +37,9 @@
 }
 
 .company-data__item
-{ @media screen and (max-width: 1199px) {
-   
+{  display: inline-block;
+    @media screen and (max-width: 1199px) {
+   display: block;
     text-align: center;}
 }
 

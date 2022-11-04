@@ -627,10 +627,6 @@ textarea {
   }
 }
 
-.adress {
-  width: 100%;
-}
-
 .logo__part--light {
   display: inline-block;
   font-family: "Raleway";
@@ -643,8 +639,12 @@ textarea {
   margin-bottom: 20px;
 }
 
+.company-data__item {
+  display: inline-block;
+}
 @media screen and (max-width: 1199px) {
   .company-data__item {
+    display: block;
     text-align: center;
   }
 }
