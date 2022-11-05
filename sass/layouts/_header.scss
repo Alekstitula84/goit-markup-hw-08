@@ -3,6 +3,9 @@
 }
 
 .header__container {
+    @media screen and (min-width: 1200px) {
+    padding: 0 auto;
+    }
     display: flex;
     align-items: center;
 }
@@ -13,6 +16,7 @@
 }
 
 .logo {
+    // width: 100%;
     display: block;
     font-family: "Raleway"; 
     font-style: normal;
@@ -47,13 +51,11 @@
     margin-right: 93px;
 }
 
-.menu {
+.menu__list {
+    display: none;
     @media screen and (min-width: 768px) {
-            width: 768px;
             display: flex;
         }
-    display: none;
-    
     align-items: center;
     gap: 50px;
 }
@@ -115,9 +117,9 @@
 
 // Mobile Menu
 .mobile-menu {
-    @media screen and (max-width: 767px) {
-            width: 768px;
-        }
+    @media screen and (min-width: 768px) {
+    display: none;       
+    }
     position: fixed;
     top: 0;
     background-color: #ffffff;
@@ -252,10 +254,15 @@
 .contacts {
     display: none;
     @media screen and (min-width: 768px) {
-            width: 768px;
             display: flex;
+           flex-direction: column;
         }
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        }
     
 }
 
@@ -264,7 +271,8 @@ margin-left: auto;
 }
 
 .contacts__item+.contacts__item {
-    margin-left: 50px;
+    // margin-left: 50px;
+    
 }
 
 .contacts__link {
@@ -277,8 +285,10 @@ margin-left: auto;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--auth-link-color);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
     &:hover,
     &:focus {
             color: var(--text-nav-link-hover-color);
