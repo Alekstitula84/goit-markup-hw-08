@@ -251,10 +251,14 @@
 
 .contacts {
     display: none;
-    // display: flex;
+    @media screen and (min-width: 768px) {
+            width: 768px;
+            display: flex;
+        }
     align-items: center;
     
 }
+
 .contacts--pos {
 margin-left: auto;
 }
