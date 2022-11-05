@@ -36,6 +36,10 @@
 }
 
 .hero__title {
+@media screen and (max-width: 479px) {
+                        font-size: 20px;
+                                line-height: 1.16;
+                }
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;

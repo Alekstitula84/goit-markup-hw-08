@@ -1,4 +1,8 @@
 .hero__btn {
+    @media screen and (max-width: 479px) {
+            font-size: 12px;
+            line-height: 1.12;
+        }
     display: block;
     transition: background-color var(--transition-duration);
     font-family: Roboto, sans-serif;
