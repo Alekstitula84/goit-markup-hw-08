@@ -920,8 +920,8 @@ textarea {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 300px;
+  min-height: 400px;
   background-color: var(--hero-title-color);
   position: absolute;
   top: 50%;
@@ -937,6 +937,18 @@ textarea {
   transition: transform var(--transition-duration), -webkit-transform var(--transition-duration);
   padding: 40px;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scaleY(0);
@@ -945,7 +957,7 @@ textarea {
 
 .modal-form {
   position: relative;
-  width: 448px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   /* border: 1px solid tomato; */
@@ -1089,10 +1101,25 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   color: var(--auth-link-color);
+  font-size: 3vw;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .terms {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .terms {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-icon {
-  display: inline-block;
+  display: block;
   margin-left: 12px;
   width: 16px;
   height: 15px;
@@ -1102,7 +1129,7 @@ textarea {
 
 .checkbox:checked + .checkbox-icon {
   background-color: var(--text-nav-link-hover-color);
-  background-image: url(..//images/checkbox.svg);
+  background-imag8e: url(..//images/checkbox.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: content-box;
@@ -1122,12 +1149,24 @@ textarea {
 
 .terms-link {
   display: block;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 3vw;
+  line-height: 0.8;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--text-nav-link-hover-color);
+}
+@media screen and (min-width: 480px) {
+  .terms-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .terms-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-btn {

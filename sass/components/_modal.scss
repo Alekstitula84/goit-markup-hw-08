@@ -9,8 +9,16 @@
 }
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    width: 300px;
+    min-height: 400px;
+    @media screen and (min-width: 480px) {
+            width: 450px;
+            min-height: 609px;
+        }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
     background-color: var(--hero-title-color);
     position: absolute;
     top: 50%;
@@ -29,7 +37,7 @@
 
 .modal-form {
     position: relative;
-    width: 448px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid tomato; */
@@ -125,10 +133,22 @@
     gap: 7px;
     align-items: center;
     color: var(--auth-link-color);
+    font-size: 3vw;
+    line-height: 0.8;
+    @media screen and (min-width: 480px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    letter-spacing: 0.03em;
+    
 }
 
 .checkbox-icon {
-    display: inline-block;
+    display: block;
     margin-left: 12px;
     width: 16px;
     height: 15px;
@@ -138,7 +158,7 @@
 
 .checkbox:checked+.checkbox-icon {
     background-color: var(--text-nav-link-hover-color);
-    background-image: url(..//images/checkbox.svg);
+    background-imag8e: url(..//images/checkbox.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-origin: content-box;
@@ -157,9 +177,18 @@
 }
 
 .terms-link {
-    display: block;
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.16;
+        }
+    @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
+    }
+    
+    display: block;
+    font-size: 3vw;
+    line-height: 0.8;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--text-nav-link-hover-color);
