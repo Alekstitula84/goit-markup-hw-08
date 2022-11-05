@@ -152,9 +152,7 @@
 .menu-close-icon {}
 
 
-// .mob-menu {
-//     margin-bottom: 302px;
-// }
+
 
 .mob-menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -201,6 +199,7 @@
 
 .mob-social {
     display: flex;
+    flex-wrap: wrap;
     
 }
 

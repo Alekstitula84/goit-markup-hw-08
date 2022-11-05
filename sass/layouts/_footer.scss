@@ -4,6 +4,16 @@
     background: var(--hero-bacground-color);
 }
 
+.footer-tab {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap:165px;
+}
+    
+}
+
 .footer__container {
     @media screen and (min-width: 1200px) {
             display: flex;
