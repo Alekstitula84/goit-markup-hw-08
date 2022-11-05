@@ -64,12 +64,12 @@
     </header> -->
     <main>
       <!-- Секція герой -->
-      <!-- <section class="hero section">
+      <section class="hero section">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__btn" data-modal-open>
           Замовити послугу
         </button>
-      </section> -->
+      </section>
       <!-- Можливості студії -->
       <section class="section">
         <div class="container">
@@ -124,6 +124,7 @@
           <ul class="work-examp list">
             <li class="work-examp__item">
               <img
+                srcset="./images/img_1.jpg 1x, ./images/img_1-2x.jpg 2x"
                 class="work-examp__img"
                 src="./images/img_1.jpg"
                 alt="Зображення рук на клавіатурі"
@@ -133,6 +134,7 @@
             </li>
             <li class="work-examp__item">
               <img
+                srcset="./images/img_2.jpg 1x, ./images/img_2-2x.jpg 2x"
                 class="work-examp__img"
                 src="./images/img_2.jpg"
                 alt="Зображення смартфону та ноубуку на робочомі столі"
@@ -142,6 +144,7 @@
             </li>
             <li class="work-examp__item">
               <img
+                srcset="./images/img_3.jpg 1x, ./images/img_3-2x.jpg 2x"
                 class="work-examp__img"
                 src="./images/img_3.jpg"
                 alt="Планшет у руках"
@@ -158,12 +161,36 @@
         <div class="team__container container">
           <ul class="brigade list">
             <li class="brigade__item">
-              <img
-                class="brigade__foto"
-                src="./images/img_people_1.jpg"
-                alt="Product Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img_people_1-mob.jpg    1x,
+                    ./images/img_people_1-mob-2x.jpg 2x
+                  "
+                  media="(max-with:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_1-tab.jpg    1x,
+                    ./images/img_people_1-tab-2x.jpg 2x
+                  "
+                  media="(min-with:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_1.jpg    1x,
+                    ./images/img_people_1-2x.jpg 2x
+                  "
+                  media="(min-with:1200px)"
+                />
+                <img
+                  class="brigade__foto"
+                  src="./images/img_people_1.jpg"
+                  alt="Product Designer"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="brigade__title">Ігор Дем'яненко</h3>
               <p class="brigade__pos" lang="en">Product Designer</p>
 
@@ -199,12 +226,35 @@
               </ul>
             </li>
             <li class="brigade__item">
-              <img
-                class="brigade__foto"
-                src="./images/img_people_2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img_people_2-mob.jpg    1x,
+                    ./images/img_people_2-mob-2x.jpg 2x
+                  "
+                  media="(max-with:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_2-tab.jpg    1x,
+                    ./images/img_people_2-tab-2x.jpg 2x
+                  "
+                  media="(min-with:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_2.jpg    1x,
+                    ./images/img_people_2-2x.jpg 2x
+                  "
+                  media="(min-with:1200px)"
+                />
+                <img
+                  class="brigade__foto"
+                  src="./images/img_people_2.jpg"
+                  alt="Product Designer"
+                  width="450"
+                />
+              </picture>
               <h3 class="brigade__title">Ольга Рєпіна</h3>
               <p class="brigade__pos" lang="en">Frontend Developer</p>
               <ul class="social social--team list">
@@ -239,12 +289,35 @@
               </ul>
             </li>
             <li class="brigade__item">
-              <img
-                class="brigade__foto"
-                src="./images/img_people_3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img_people_3-mob.jpg    1x,
+                    ./images/img_people_3-mob-2x.jpg 2x
+                  "
+                  media="(max-with:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_3-tab.jpg    1x,
+                    ./images/img_people_3-tab-2x.jpg 2x
+                  "
+                  media="(min-with:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_3.jpg    1x,
+                    ./images/img_people_3-2x.jpg 2x
+                  "
+                  media="(min-with:1200px)"
+                />
+                <img
+                  class="brigade__foto"
+                  src="./images/img_people_3.jpg"
+                  alt="Product Designer"
+                  width="450"
+                />
+              </picture>
               <h3 class="brigade__title">Микола Тарасов</h3>
               <p class="brigade__pos" lang="en">Marketing</p>
 
@@ -280,12 +353,35 @@
               </ul>
             </li>
             <li class="brigade__item">
-              <img
-                class="brigade__foto"
-                src="./images/img_people_4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img_people_4-mob.jpg    1x,
+                    ./images/img_people_4-mob-2x.jpg 2x
+                  "
+                  media="(max-with:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_4-tab.jpg    1x,
+                    ./images/img_people_4-tab-2x.jpg 2x
+                  "
+                  media="(min-with:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_people_4.jpg    1x,
+                    ./images/img_people_4-2x.jpg 2x
+                  "
+                  media="(min-with:1200px)"
+                />
+                <img
+                  class="brigade__foto"
+                  src="./images/img_people_4.jpg"
+                  alt="Product Designer"
+                  width="450"
+                />
+              </picture>
               <h3 class="brigade__title">Михайло Єрмаков</h3>
               <p class="brigade__pos" lang="en">UI Designer</p>
 
