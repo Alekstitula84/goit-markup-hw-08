@@ -31,7 +31,6 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 :root {
@@ -1512,11 +1511,30 @@ textarea {
           transform: translateY(0);
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
 .card__wrap-img {
   display: block;
 }
 
 .card__desription {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
@@ -1530,11 +1548,6 @@ textarea {
   letter-spacing: 0.06em;
   color: var(--text-nav-link-color);
   margin-bottom: 4px;
-}
-
-.card__wrap {
-  position: relative;
-  overflow: hidden;
 }
 
 .card__wrap-text {

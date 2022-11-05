@@ -24,11 +24,22 @@
     }
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card__wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
 .card__wrap-img {
     display: block;
 }
 
 .card__desription {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid var(--portfolio-border-color);
     border-top: none;
@@ -44,10 +55,7 @@
     margin-bottom: 4px;
 }
 
-.card__wrap {
-    position: relative;
-    overflow: hidden;
-}
+
 
 .card__wrap-text {
     position: absolute;
