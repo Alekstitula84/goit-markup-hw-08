@@ -124,7 +124,10 @@
         overflow: auto;
     }
 }
-
+.mob-menu-top {
+    margin-bottom: 50px;
+}
+ 
 .menu-button-close {
     position: absolute;
     top: 10px;
@@ -197,23 +200,17 @@
 }
 
 .mob-social {
-    position: relative;
     display: flex;
-    gap: 20px;
-}
-
-.mob-social__link::after {
-    content: '';
-    top: 50%;
     
-    position: absolute;
-    width: 22px;
-    height: 1px;
-    background-color: #757575;
-    transform: rotate(90deg);
-
 }
 
+.mob-social__item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #757575;
+}
+
+// 
 
 .mob-social__link {
     font-style: normal;
@@ -222,6 +219,7 @@
         line-height: 1.22px;
         letter-spacing: 0.02em;
         color: var(--text-nav-link-hover-color);
+        
 }
 
 
