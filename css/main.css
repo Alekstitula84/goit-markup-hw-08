@@ -783,6 +783,15 @@ textarea {
     gap: 165px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-tab {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -803,13 +812,13 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (max-width: 1199px) {
   .kontakty {
     margin-bottom: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
