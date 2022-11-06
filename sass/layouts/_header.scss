@@ -128,12 +128,13 @@
     z-index: 1;
     padding-top: 48px;
     padding-bottom: 48px;
+        overflow: auto;
     >.container {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: auto;
+        
     }
 }
 .mob-menu-top {
@@ -245,10 +246,6 @@
 .menu__link.current {
     color: var(--text-nav-link-hover-color);
 }
-
-/* contacts */
-
-
 
 
 .contacts {

@@ -312,6 +312,7 @@ textarea {
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -330,7 +331,6 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: auto;
 }
 
 .mob-menu-top {
@@ -435,7 +435,6 @@ textarea {
   color: var(--text-nav-link-hover-color);
 }
 
-/* contacts */
 .contacts {
   display: none;
 }
