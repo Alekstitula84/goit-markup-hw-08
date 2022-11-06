@@ -129,9 +129,11 @@
 
 .terms {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     gap: 7px;
     align-items: center;
+    justify-content: center;
     color: var(--auth-link-color);
     font-size: 3vw;
     line-height: 1.0;
