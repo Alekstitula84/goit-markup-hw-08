@@ -29,6 +29,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -1494,6 +1495,9 @@ textarea {
 
 .cardset__item {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .cardset__item {
@@ -1518,16 +1522,19 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: -webkit-box-shadow var(--transition-duration);
+  transition: -webkit-box-shadow var(--transition-duration);
+  transition: box-shadow var(--transition-duration);
+  transition: box-shadow var(--transition-duration), -webkit-box-shadow var(--transition-duration);
+}
+.card:hover, .card:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card__wrap {
-  width: 100%;
   position: relative;
   overflow: hidden;
-}
-
-.card__wrap-img {
-  display: block;
 }
 
 .card__desription {
@@ -1535,12 +1542,12 @@ textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 20px 24px;
-  border: 1px solid var(--portfolio-border-color);
-  border-top: none;
+  border-left: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
 }
 
 .card__desription-title {
-  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1570,22 +1577,9 @@ textarea {
 }
 
 .card__desription-text {
-  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--auth-link-color);
-}
-
-.card {
-  -webkit-transition: -webkit-box-shadow var(--transition-duration);
-  transition: -webkit-box-shadow var(--transition-duration);
-  transition: box-shadow var(--transition-duration);
-  transition: box-shadow var(--transition-duration), -webkit-box-shadow var(--transition-duration);
-  display: block;
-}
-.card:hover, .card:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */
