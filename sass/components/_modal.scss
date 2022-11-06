@@ -129,7 +129,6 @@
 
 .terms {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 30px;
     gap: 7px;
     align-items: center;
@@ -137,6 +136,9 @@
     color: var(--auth-link-color);
     font-size: 3vw;
     line-height: 1.0;
+    @media screen and (max-width: 479px) {
+            flex-wrap: wrap;
+        }
     @media screen and (min-width: 480px) {
             font-size: 12px;
             line-height: 1.16;

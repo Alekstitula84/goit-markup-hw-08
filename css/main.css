@@ -331,10 +331,11 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: auto;
 }
 
 .mob-menu-top {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .menu-button-close {
@@ -1146,8 +1147,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 30px;
   gap: 7px;
   -webkit-box-align: center;
@@ -1160,6 +1159,12 @@ textarea {
   font-size: 3vw;
   line-height: 1;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 479px) {
+  .terms {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 480px) {
   .terms {
