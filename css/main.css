@@ -464,6 +464,13 @@ textarea {
   }
 }
 
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .contacts--pos {
   margin-left: auto;
 }
