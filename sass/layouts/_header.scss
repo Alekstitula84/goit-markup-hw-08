@@ -264,6 +264,10 @@
     
 }
 
+
+
+
+
 .contacts--pos {
 margin-left: auto;
 }
@@ -272,6 +276,7 @@ margin-left: auto;
 .contacts__link {
     transition: color var(--transition-duration);
     display: flex;
+    
     align-items: center;
     font-style: normal;
     font-weight: 500;
@@ -291,8 +296,7 @@ margin-left: auto;
 
 .contacts__icon {
     fill: currentColor;
-}
-.contacts__icon {
     margin-right: 10px;
 }
+
 
