@@ -501,7 +501,7 @@ textarea {
   margin: 0 auto;
   max-width: 1600px;
   text-align: center;
-  padding: 118px 60px;
+  padding: 118px 0;
   background: var(--hero-bacground-color);
   background-image: var(--bg-gradient), url(../images/img-hero_mob.jpg);
   background-repeat: no-repeat;
@@ -541,7 +541,7 @@ textarea {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 6vw;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -550,10 +550,16 @@ textarea {
   max-width: 696px;
   margin: 0 auto 30px auto;
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .hero__title {
-    font-size: 5vw;
-    line-height: 1.16;
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -580,8 +586,8 @@ textarea {
 }
 @media screen and (max-width: 479px) {
   .hero__btn {
-    font-size: 12px;
-    line-height: 1.12;
+    font-size: 14px;
+    line-height: 1.16;
   }
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -613,6 +619,13 @@ textarea {
 
 .studio__item {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .studio__item {
@@ -628,12 +641,9 @@ textarea {
 .studio__icon {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .studio__icon {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 450px;
   }
 }
 
