@@ -483,8 +483,6 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--auth-link-color);
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--text-nav-link-hover-color);
@@ -910,6 +908,7 @@ textarea {
 
 .company-data__item {
   display: inline-block;
+  margin-bottom: 9px;
 }
 @media screen and (max-width: 1199px) {
   .company-data__item {
@@ -928,7 +927,6 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
-  margin-bottom: 9px;
 }
 .company-data__adres:hover, .company-data__adres:focus {
   color: var(--text-nav-link-hover-color);
@@ -943,7 +941,6 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-nav-color);
-  margin-bottom: 9px;
 }
 .company-data__nav:hover, .company-data__nav:focus {
   color: var(--text-nav-link-hover-color);
