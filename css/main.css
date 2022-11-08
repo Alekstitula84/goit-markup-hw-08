@@ -516,7 +516,6 @@ textarea {
 @media screen and (min-width: 480px) {
   .hero {
     background-image: var(--bg-gradient), url(../images/img-hero_tab.jpg);
-    padding: 118px 0px;
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
@@ -527,12 +526,16 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: var(--bg-gradient), url(../images/img-hero.jpg);
-    padding: 200px 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--bg-gradient), url(../images/img-hero-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
   }
 }
 
@@ -799,6 +802,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: color var(--transition-duration), border var(--transition-duration);
   transition: color var(--transition-duration), border var(--transition-duration);
   color: var(--customer-link-color);
@@ -832,6 +838,7 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -841,6 +848,7 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     gap: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -864,7 +872,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .kontakty {
     margin-bottom: 60px;
     -webkit-box-align: center;
@@ -931,7 +939,7 @@ textarea {
     margin-left: 70px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .soc {
     margin-bottom: 60px;
   }
@@ -946,7 +954,11 @@ textarea {
   text-transform: uppercase;
   color: var(--hero-title-color);
   margin-bottom: 20px;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .soc__title {
+    text-align: center;
+  }
 }
 
 .social__link--footer {
@@ -1327,7 +1339,7 @@ textarea {
   text-transform: uppercase;
   color: var(--hero-title-color);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscription__text {
     text-align: center;
   }

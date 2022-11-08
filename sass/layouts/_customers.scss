@@ -20,6 +20,7 @@
 
 .customers__link {
     display: flex;
+    justify-content: center;
     transition: color var(--transition-duration),
         border var(--transition-duration);
     color: var(--customer-link-color);
