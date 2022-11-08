@@ -1370,6 +1370,7 @@ textarea {
 
 .subscription__input {
   width: 100%;
+  min-width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1382,7 +1383,12 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .subscription__input {
-    min-width: 358px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
   }
 }
 .subscription__input::-webkit-input-placeholder {
