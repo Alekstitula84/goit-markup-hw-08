@@ -29,7 +29,7 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 :root {
@@ -104,9 +104,17 @@ textarea {
 
 .top__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .top__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .top__title--position {
@@ -465,7 +473,7 @@ textarea {
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts__item {
+  .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -554,12 +562,16 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .hero__title {
+    width: 360px;
+    text-align: center;
     font-size: 26px;
     line-height: 1.6;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    width: 696px;
+    text-align: center;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -913,7 +925,7 @@ textarea {
 }
 
 .company-data__item {
-  display: inline-block;
+  display: block;
   margin-bottom: 9px;
 }
 @media screen and (max-width: 1199px) {
